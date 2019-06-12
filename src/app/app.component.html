@@ -1,0 +1,19 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<form [formGroup]="userForm" (ngSubmit)="formSubmit()">
+  <label>User Name</label >
+  <input type="text" formControlName="name">
+
+  <label>Age</label>
+  <input type="text" formControlNAme="age">
+ 
+  <label>E-mail</label>
+  <input type="text" FormControlName="email">
+  <input type="submit" value="submit">
+</form>
+
+<ul>
+  <li *ngFor="let user of x">{{user.name}}></li>
+</ul>
